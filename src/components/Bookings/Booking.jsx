@@ -24,7 +24,7 @@ function Booking() {
 				setMovie(res)
 			})
 			.catch((err) => console.log(err));
-	}, [id]);
+	}, []);
 
 	const handleChange = (e) => {
 		setInputs((prevState) => ({
