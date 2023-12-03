@@ -4,6 +4,8 @@ import { Box, IconButton, List, ListItem, ListItemText, Typography } from "@mui/
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import DeleteIcon from "@mui/icons-material/Delete";
 function UserProfile() {
+		const [statusbar, setSt] = useState(true);
+
 	const [bookings, setBookings] = useState();
 	const [user, setUser] = useState();
 	useEffect(() => {
@@ -15,7 +17,7 @@ function UserProfile() {
 			.catch((err) => {
 				console.log(err);
 			});
-	}, [bookings]);
+	}, [statusbar]);
 	
 
 	const handleDelete = (id) => {
@@ -114,6 +116,7 @@ function UserProfile() {
 												<IconButton
 													color="error"
 													onClick={() => {
+														setSt(!statusbar)
 														handleDelete(booking._id);
 													}}
 												>
