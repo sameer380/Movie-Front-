@@ -30,6 +30,7 @@ function App() {
 			<Header />
 			<section>
 				<Routes>
+					<Route path="/" element={<HomePage />} />
 					<Route path="/home" element={<HomePage />} />
 					<Route path="/movies" element={<Movies />} />
 					<Route path="/admin" element={<Admin />} />
