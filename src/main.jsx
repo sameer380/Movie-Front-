@@ -7,7 +7,7 @@ import { Provider } from "react-redux";
 import axios from "axios";
 import { store } from "./store/index.js";
 import { ToastContainer } from "react-toastify";
-axios.defaults.baseURL = "https://rich-pear-worm-tie.cyclic.app";
+axios.defaults.baseURL = "https://frantic-pig-bikini.cyclic.app/home";
 ReactDOM.createRoot(document.getElementById("root")).render(
 	<React.StrictMode>
 		<BrowserRouter>
