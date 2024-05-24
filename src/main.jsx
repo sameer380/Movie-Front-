@@ -7,7 +7,7 @@ import { Provider } from "react-redux";
 import axios from "axios";
 import { store } from "./store/index.js";
 import { ToastContainer } from "react-toastify";
-axios.defaults.baseURL = "https://moviex-nymi.onrender.com/";
+axios.defaults.baseURL = "https://moviebackproject.onrender.com/";
 ReactDOM.createRoot(document.getElementById("root")).render(
 	<React.StrictMode>
 		<BrowserRouter>
